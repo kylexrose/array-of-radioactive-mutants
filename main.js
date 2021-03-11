@@ -1,7 +1,17 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const addMeToEnd = (arr) => arr.push('Colin');
 
+const addMeToStart = (arr) => arr.unshift('Colin');
+
+const changeLast = (arr, change) => arr[arr.length-1] = change;
+
+const changeAllValuesTo = (arr, value) => arr.forEach((current, i) => arr[i] = value);
+
+const oddOrEven = (arr) => arr.forEach((current, i) => arr[i] = (current % 2) ? 'odd' : 'even')
+
+const changeNextThreeToValue = (index, arr, value) => arr.splice(index, 3, value, value, value)
 
 
 
